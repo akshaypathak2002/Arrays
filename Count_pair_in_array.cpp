@@ -23,4 +23,20 @@ int countPair(int arr[], int ele, int n)
     if (count == 0)
         return -1;
     return count;
+    // It time complexity is O(N)
+}
+int main()
+{
+    int n; // for the size of the array
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+    int sum;
+    cout << "Enter the sum you want to check  " << endl;
+    cin >> sum;
+    int pairs = countPair(arr, sum, n);
+    cout << pairs << endl;
+
+    return 0;
 }
